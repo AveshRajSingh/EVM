@@ -14,7 +14,7 @@ const UserProvider = ({children}) =>{
         const fetchUser = async () => {
             try {
                 setUserLoading(true);
-                const response = await axios.get("http://localhost:3000/api/getUser", {
+                const response = await axios.get("https://evm-kxmh.onrender.com/api/getUser", {
                     withCredentials: true,
                     headers: {
                         "Content-Type": "application/json",
