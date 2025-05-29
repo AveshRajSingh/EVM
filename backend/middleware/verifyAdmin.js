@@ -6,7 +6,7 @@ const verifyAdmin = async (req, res, next) => {
     if (!user) {
         return res.status(401).json({ message: "Unauthorized" });
     }
-    const isAdmin = user._id.equals(mongoose.Types.ObjectId("683821862fe56bba07fba3a5"))
+    const isAdmin = user._id.equals(new mongoose.Types.ObjectId("683821862fe56bba07fba3a5"));
     if (!isAdmin) {
         return res.status(403).json({ message: "Forbidden from admin" });
     }
