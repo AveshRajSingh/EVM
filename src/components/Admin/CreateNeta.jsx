@@ -115,7 +115,7 @@ const CreateNeta = () => {
     }
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/createLeader",
+        "https://evm-kxmh.onrender.com/api/createLeader",
         { ...form, age: Number(form.age) },
         {
           headers: { "Content-Type": "application/json" },

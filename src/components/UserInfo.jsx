@@ -13,7 +13,7 @@ const UserInfo = () => {
     setLoading(true);
     try {
       const response = await axios.get(
-        `http://localhost:3000/api/getUser/${userId}`,
+        `https://evm-kxmh.onrender.com/api/getUser/${userId}`,
         {
           withCredentials: true,
           headers: {
@@ -184,7 +184,7 @@ const UserInfo = () => {
         <button
           onClick={async () => {
             try {
-              await axios.get("http://localhost:3000/api/logout", {
+              await axios.get("https://evm-kxmh.onrender.com/api/logout", {
                 withCredentials: true,
                 headers: {
                   "Content-Type": "application/json",

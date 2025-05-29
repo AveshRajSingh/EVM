@@ -19,7 +19,7 @@ const LeaderInfo = () => {
     const checkVoteStatus = async () => {
       try {
         const res = await axios.post(
-          "http://localhost:3000/api/hasVoted",
+          "https://evm-kxmh.onrender.com/api/hasVoted",
           {
             voterId: user._id,
             electionType: leaderData.electionType,
@@ -47,7 +47,7 @@ const LeaderInfo = () => {
   const fetchNeta = async () => {
     try {
       setLoading(true);
-      const res = await axios.get(`http://localhost:3000/api/getNeta/${id}`, {
+      const res = await axios.get(`https://evm-kxmh.onrender.com/api/getNeta/${id}`, {
         withCredentials: true,
         headers: {
           "Content-Type": "application/json",
@@ -72,7 +72,7 @@ const LeaderInfo = () => {
   const handleVoteConfirm = async () => {
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/vote",
+        "https://evm-kxmh.onrender.com/api/vote",
         {
           voterId: user._id,
           netaId: id,

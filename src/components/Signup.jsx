@@ -37,7 +37,7 @@ export default function Signup() {
     try {
       setLoading(true);
       const res = await axios.post(
-        "http://localhost:3000/api/sendOtp",
+        "https://evm-kxmh.onrender.com/api/sendOtp",
         { ...form },
         {
           withCredentials: true,

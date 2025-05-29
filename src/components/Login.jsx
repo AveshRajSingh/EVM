@@ -27,7 +27,7 @@ export default function Login() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3000/api/login", // Corrected endpoint
+        "https://evm-kxmh.onrender.com/api/login", // Corrected endpoint
         { email, password }, // Send as data, not in 'data' property
         {
           headers: { "Content-Type": "application/json" },
