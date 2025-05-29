@@ -106,6 +106,7 @@ const verifyOtp = async (req, res) => {
 
 
 const loginUser = async (req, res) => {
+  console.log("login user called");
   try {
     const { email, password } = req.body;
     if (!email || !password)
