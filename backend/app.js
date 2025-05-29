@@ -14,7 +14,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 app.use(cors({
-  origin: ["http://localhost:5173", "https://evm-kxmh.onrender.com"],
+  origin: ["http://localhost:5173", "https://evm-kxmh.onrender.com","https://evm-aveshrajsinghs-projects.vercel.app"],
   methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
   credentials: true,
 }));
