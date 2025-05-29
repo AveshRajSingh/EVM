@@ -29,7 +29,7 @@ const Home = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await axios.get("http://localhost:3000/api/home", {
+        const response = await axios.get("https://evm-kxmh.onrender.com/api/home", {
           withCredentials: true,
           headers: {
             "Content-Type": "application/json",
