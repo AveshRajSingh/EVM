@@ -3,7 +3,7 @@ import mongoose from "mongoose"
 
 const connectDb = async () => {
     try {
-         const connection =await  mongoose.connect(`mongodb+srv://EVMUSER:EVM%4012344@cluster0.sdbwaza.mongodb.net/EVM`)
+         const connection =await  mongoose.connect(process.env.MONGODB_URI);
          console.log("DB connected successfully")
     } catch (error) {
         console.error("ERR while connecting db",error)
